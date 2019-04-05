@@ -19,9 +19,9 @@ public class PalindromeString {
 	}
 	System.out.println(reverse);
 	if (reverse.equalsIgnoreCase(str)) {
-		System.out.println("String is polindromec ");
+		System.out.println("String is palindromec ");
 	}else {
-		System.out.println("String is not polindromic");
+		System.out.println("String is not palindromic");
 	}
 }
 }
