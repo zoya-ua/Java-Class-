@@ -1,25 +1,15 @@
 package com.practice;
 
-import java.util.Scanner;
-
-public class Repl{
+class Main {
+static 	String makeThreeSubstr(String word,int startIndex,int endIndex)
+	{
 	
-	  public static void main(String[] args) {
-	    Scanner sc = new Scanner(System.in); 
-	  System.out.println("Enter the browser name to proceed further with execution");
-	   String browser = sc.nextLine(); 
-	
-	   
-	   if (browser.equalsIgnoreCase("ChRoME")){
-	     System.out.println("Procced with chrome Browser");
-	   } else if (browser.equalsIgnoreCase("FireFOX"))  {
-		   System.out.println("Procced with firefox Browser");
-		   
-	   } else if(browser.equalsIgnoreCase("Ie")) {
-		   System.out.println("Proceed with ie Browser");
-	   }else {
-		   System.out.println("Invalid Browser");
-	   }
-	   
-	  }
+	  String newword=word.substring(startIndex, endIndex);
+return newword+newword+newword;
 	}
+	//test case below (dont change):
+	public static void main(String[] args){
+		System.out.println(makeThreeSubstr("hello",0,2)); //should be hehehe
+		System.out.println(makeThreeSubstr("shenanigans",3,7)); //should be naninaninani
+	}
+}
