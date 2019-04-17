@@ -1,15 +1,21 @@
 package com.practice;
-
-class Main {
-static 	String makeThreeSubstr(String word,int startIndex,int endIndex)
+ class SyntaxTechnologies
+{
+  String schoolName;
+  int batch;
+  String year;
+  String lastDayOfClass;
+  
+  SyntaxTechnologies (){
+    schoolName="Syntax";
+    batch=4;
+    year="2019";
+    lastDayOfClass="August 30";
+  }
+	public static void main(String[] args)
 	{
+	  SyntaxTechnologies obj=new SyntaxTechnologies();
+	  System.out.println(obj.schoolName);
 	
-	  String newword=word.substring(startIndex, endIndex);
-return newword+newword+newword;
-	}
-	//test case below (dont change):
-	public static void main(String[] args){
-		System.out.println(makeThreeSubstr("hello",0,2)); //should be hehehe
-		System.out.println(makeThreeSubstr("shenanigans",3,7)); //should be naninaninani
 	}
 }
